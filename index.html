@@ -1,37 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mimecat</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>MIMECAT</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 80px 0;
+      text-align: left;
+    }
+    header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .button-group {
+      display: flex;
+      gap: 12px;
+    }
+    .button {
+      background-color: #6366F1;
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #4F46E5;
+    }
+    section {
+      margin-top: 80px;
+    }
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .image-placeholder {
+      width: 100%;
+      height: 300px;
+      background-color: #e5e7eb;
+      border: 2px dashed #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-  <!-- 헤더 -->
+
   <header>
-    <div class="logo">Mimecat</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>MIMECAT에 오신 것을 환영합니다!</h1>
+      <p>다양한 스티커, 고품질 출력물, 간편한 이미지 편집 도구를 제공하는 맞춤형 서비스입니다.<br>
+         개인과 기업 모두를 위한 최신 트렌드의 디자인과 빠른 제작으로 여러분의 창의성을 실현해드립니다.</p>
+      <div class="button-group">
+        <button class="button">지금 주문하기</button>
+        <button class="button">제작 주문하기</button>
+      </div>
+    </div>
   </header>
 
-  <!-- 메인 콘텐츠 -->
-  <main>
-    <section>
-      <h1>Welcome to MINEcat</h1>
-      <p>This is the homepage.</p>
-    </section>
-  </main>
+  <section>
+    <div class="container">
+      <h2 class="section-title">스티커 컬렉션</h2>
+      <div class="image-placeholder">이미지 영역</div>
+    </div>
+  </section>
 
-  <!-- 푸터 -->
-  <footer>
-    <p>&copy; 2025 MIMCAT. All rights reserved.</p>
-  </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
