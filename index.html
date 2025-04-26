@@ -69,6 +69,22 @@
       color: #94a3b8;
       font-size: 18px;
     }
+    .two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+.two-column .text-content {
+  flex: 1;
+  min-width: 300px;
+}
+.two-column .image-placeholder {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+}
+
   </style>
 </head>
 <body>
@@ -86,11 +102,43 @@
   </header>
 
   <section>
-    <div class="container">
+  <div class="container two-column">
+    <div class="text-content">
       <h2 class="section-title">스티커 컬렉션</h2>
-      <div class="image-placeholder">이미지 영역</div>
+      <p>다양한 테마와 디자인의 스티커를 만나보세요. 매일 새로운 스티커가 추가됩니다!</p>
+    </div>
+    <div class="image-placeholder">이미지 영역</div>
+  </div>
+  </section>
+  
+    <section>
+    <div class="container">
+      <h2 class="section-title">출력 서비스</h2>
+      <div class="image-placeholder">출력 서비스 이미지 영역</div>
     </div>
   </section>
 
+  <section>
+    <div class="container">
+      <h2 class="section-title">직접 제작 스티커 주문 방법 안내</h2>
+      <div class="image-placeholder">제작 주문 방법 이미지 영역</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">결제 및 배송 안내</h2>
+      <div class="image-placeholder">결제 및 배송 안내 이미지 영역</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+      <div class="image-placeholder">FAQ 이미지 영역</div>
+    </div>
+  </section>
+
+  
 </body>
 </html>
