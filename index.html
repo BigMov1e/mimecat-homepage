@@ -58,7 +58,7 @@
       margin-bottom: 40px;
       text-align: center;
     }
-    .image-placeholder {
+  <!-- .image-placeholder {
       width: 100%;
       height: 300px;
       background-color: #e5e7eb;
@@ -68,8 +68,19 @@
       justify-content: center;
       color: #94a3b8;
       font-size: 18px;
-    }
-    .two-column {
+  } -->
+  .image-placeholder {
+  width: 400px; /* 이미지 영역 사이즈 */
+  height: 500px;
+  background-color: #e5e7eb;
+  border: 2px dashed #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-size: 18px;
+}
+.two-column {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -84,11 +95,17 @@
   min-width: 300px;
   height: 300px;
 }
+<!-- .collection-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+} -->
 .collection-grid {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
+  flex: 1; /* 남는 공간 채움 */
+}    
 .collection-item {
   display: flex;
   justify-content: center;
@@ -103,6 +120,11 @@
   width: 100%;
   text-align: center;
   line-height: 1.6;
+}
+.collection-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
   </style>
 </head>
@@ -121,32 +143,35 @@
   </header>
 
   <section>
-  <div class="container two-column">
-    <div class="image-placeholder">이미지 영역</div>
-    <div class="text-content">
-      <h2 class="section-title">스티커 컬렉션</h2>
-      <p>다양한 테마와 디자인의 스티커를 만나보세요. 매일 새로운 스티커가 추가됩니다!</p>
+  <div class="container">
+    <h2 class="section-title">스티커 컬렉션</h2>
+    <p>다양한 테마와 디자인의 스티커를 만나보세요. 매일 새로운 스티커가 추가됩니다!</p>
+    <div class="collection-wrapper">
+      <div class="image-placeholder">이미지 영역</div>
+      
+      <div class="collection-grid">
+        <div class="collection-item">
+          <div class="description-box">
+            방수 스티커 - 어떤 환경에서도 벗겨지지 않는 내구성이 뛰어난 방수 스티커로 실외 사용에도 적합합니다.
+          </div>
+        </div>
+        <div class="collection-item">
+          <div class="description-box">
+            투명 스티커 - 투명한 배경으로 어디에나 자연스럽게 어울리는 세련된 디자인의 스티커입니다.
+          </div>
+        </div>
+        <div class="collection-item">
+          <div class="description-box">
+            PVC 스티커 - 두껍고 내구성이 강한 PVC 소재로 제작된 프리미엄 스티커로 오래 사용할 수 있습니다.
+          </div>
+        </div>
+        <div class="collection-item">
+          <div class="description-box">
+            컷팅 스티커 - 원하는 모양대로 정교하게 컷팅된 스티커로 독특한 디자인을 표현할 수 있습니다.
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="collection-item">
-        <div class="description-box">
-          방수 스티커 - 어떤 환경에서도 벗겨지지 않는 내구성이 뛰어난 방수 스티커로 실외 사용에도 적합합니다.
-        </div>
-      </div>
-      <div class="collection-item">
-        <div class="description-box">
-          투명 스티커 - 투명한 배경으로 어디에나 자연스럽게 어울리는 세련된 디자인의 스티커입니다.
-        </div>
-      </div>
-      <div class="collection-item">
-        <div class="description-box">
-          PVC 스티커 - 두껍고 내구성이 강한 PVC 소재로 제작된 프리미엄 스티커로 오래 사용할 수 있습니다.
-        </div>
-      </div>
-      <div class="collection-item">
-        <div class="description-box">
-          컷팅 스티커 - 원하는 모양대로 정교하게 컷팅된 스티커로 독특한 디자인을 표현할 수 있습니다.
-        </div>
-      </div>
   </div>
   </section>
   
