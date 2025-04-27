@@ -85,26 +85,25 @@
   height: 300px;
 }
 .collection-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .collection-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
-.collection-item .image-placeholder {
-  width: 100%;
-  height: 200px;
-}
-.item-description {
-  margin-top: 16px;
+.description-box {
+  background-color: #E0E7FF;
+  padding: 24px;
+  border-radius: 12px;
   font-size: 16px;
   color: #374151;
+  max-width: 800px;
+  width: 100%;
   text-align: center;
+  line-height: 1.6;
 }
-
   </style>
 </head>
 <body>
@@ -128,24 +127,26 @@
       <h2 class="section-title">스티커 컬렉션</h2>
       <p>다양한 테마와 디자인의 스티커를 만나보세요. 매일 새로운 스티커가 추가됩니다!</p>
     </div>
-    <div class="collection-grid">
-      <div class="collection-item">
-        <div class="image-placeholder">스티커 이미지1</div>
-        <p class="item-description">감성 일러스트 스티커</p>
+    <div class="collection-item">
+        <div class="description-box">
+          방수 스티커 - 어떤 환경에서도 벗겨지지 않는 내구성이 뛰어난 방수 스티커로 실외 사용에도 적합합니다.
+        </div>
       </div>
       <div class="collection-item">
-        <div class="image-placeholder">스티커 이미지2</div>
-        <p class="item-description">러블리 캐릭터 스티커</p>
+        <div class="description-box">
+          투명 스티커 - 투명한 배경으로 어디에나 자연스럽게 어울리는 세련된 디자인의 스티커입니다.
+        </div>
       </div>
       <div class="collection-item">
-        <div class="image-placeholder">스티커 이미지3</div>
-        <p class="item-description">심플 아이콘 스티커</p>
+        <div class="description-box">
+          PVC 스티커 - 두껍고 내구성이 강한 PVC 소재로 제작된 프리미엄 스티커로 오래 사용할 수 있습니다.
+        </div>
       </div>
       <div class="collection-item">
-        <div class="image-placeholder">스티커 이미지4</div>
-        <p class="item-description">텍스트 레터링 스티커</p>
+        <div class="description-box">
+          컷팅 스티커 - 원하는 모양대로 정교하게 컷팅된 스티커로 독특한 디자인을 표현할 수 있습니다.
+        </div>
       </div>
-    </div>
   </div>
   </section>
   
