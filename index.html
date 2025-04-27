@@ -60,18 +60,9 @@
     font-weight: 700;
     color: #111827;
   }  
-  /* 오른쪽 빈 공간 */
   .empty-space {
     flex: 1;
-  }
-  
-  <!-- .nav-menu {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start; /* 왼쪽 정렬 */
-    gap: 24px;
-  } -->
-
+  }  
   .nav-menu {
     border-top: 1px solid #e5e7eb;
     background-color: #ffffff;
@@ -82,8 +73,53 @@
     padding: 12px 20px;
     display: flex;
     justify-content: center;
-    gap: 48px; /* 메뉴 간격 넓힘 */
-  }      
+    gap: 48px;
+    position: relative;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item > a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    padding: 8px 12px;
+    display: block;
+  }
+  
+  /* 서브메뉴 기본 숨김 */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    min-width: 150px;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  
+  /* 서브메뉴 안 링크 스타일 */
+  .submenu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+    display: block;
+  }
+  
+  .submenu a:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* 메뉴에 마우스 올렸을 때 서브메뉴 보이기 */
+  .menu-item:hover .submenu {
+    display: flex;
+  }
   .nav-container a {
     text-decoration: none;
     color: #000000;
@@ -235,20 +271,56 @@
 <header class="site-header">
   <div class="header-container">
     <div class="logo-image-area">
-      <img src="로고이미지.png" alt="로고" class="logo-image" align="left"> 
+      <img src="로고이미지.png" alt="로고" class="logo-image">
     </div>
-      <div class="site-title">MIMECAT</div>
-      <div class="empty-space"></div> <!-- 오른쪽 빈 공간 -->
-    </div>
+    <div class="site-title">MIMECAT</div>
+    <div class="empty-space"></div>
   </div>
+  
   <nav class="nav-menu">
     <div class="nav-container">
-      <a href="#">메뉴1</a>
-      <a href="#">메뉴2</a>
-      <a href="#">메뉴3</a>
-      <a href="#">메뉴4</a>
-      <a href="#">메뉴5</a>
-      <a href="#">메뉴6</a>
+      <div class="menu-item">
+        <a href="#">메뉴1</a>
+        <div class="submenu">
+          <a href="#">서브메뉴1-1</a>
+          <a href="#">서브메뉴1-2</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">메뉴2</a>
+        <div class="submenu">
+          <a href="#">서브메뉴2-1</a>
+          <a href="#">서브메뉴2-2</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">메뉴3</a>
+        <div class="submenu">
+          <a href="#">서브메뉴3-1</a>
+          <a href="#">서브메뉴3-2</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">메뉴4</a>
+        <div class="submenu">
+          <a href="#">서브메뉴4-1</a>
+          <a href="#">서브메뉴4-2</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">메뉴5</a>
+        <div class="submenu">
+          <a href="#">서브메뉴5-1</a>
+          <a href="#">서브메뉴5-2</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">메뉴6</a>
+        <div class="submenu">
+          <a href="#">서브메뉴6-1</a>
+          <a href="#">서브메뉴6-2</a>
+        </div>
+      </div>
     </div>
   </nav>
 </header>
