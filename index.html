@@ -39,10 +39,11 @@
   }
   
   /* 로고 + 이미지 */
-  .logo-area {
+  /* 왼쪽 로고이미지 */
+  .logo-image-area {
+    flex: 1;
     display: flex;
     align-items: center;
-    gap: 12px;
   }
   
   .logo-image {
@@ -50,10 +51,18 @@
     height: 40px;
   }
   
+  /* 가운데 MIMECAT */
   .site-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 24px;
     font-weight: 700;
     color: #111827;
+  }  
+  /* 오른쪽 빈 공간 */
+  .empty-space {
+    flex: 1;
   }
   
   <!-- .nav-menu {
@@ -225,9 +234,11 @@
   <!-- 로고 + 메뉴 헤더 -->
 <header class="site-header">
   <div class="header-container">
-    <div class="logo-area">
+    <div class="logo-image-area">
       <img src="로고이미지.png" alt="로고" class="logo-image" align="left"> 
+    </div>
       <div class="site-title">MIMECAT</div>
+      <div class="empty-space"></div> <!-- 오른쪽 빈 공간 -->
     </div>
   </div>
   <nav class="nav-menu">
@@ -235,6 +246,9 @@
       <a href="#">메뉴1</a>
       <a href="#">메뉴2</a>
       <a href="#">메뉴3</a>
+      <a href="#">메뉴4</a>
+      <a href="#">메뉴5</a>
+      <a href="#">메뉴6</a>
     </div>
   </nav>
 </header>
