@@ -7,96 +7,126 @@
   <style>
 
   /* 기본 설정 */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* 로고 + 메뉴 */
-.site-header {
-  position: sticky;
-  top: 0;
-  background-color: #ffffff; /* 하얀색 */
-  z-index: 1000;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.header-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000000; /* 검정색 */
-  flex: 1;
-  text-align: center;
-}
-
-.nav-menu {
-  display: flex;
-  flex: 1;
-  justify-content: flex-start; /* 왼쪽 정렬 */
-  gap: 24px;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 18px;
-}
-
-/* 메인 배너 */
-.main-banner {
-  background-color: #000000; /* 검정색 */
-  color: #ffffff; /* 하얀색 */
-  padding: 80px 0;
-  text-align: center;
-}
-
-.main-banner h1 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.main-banner p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-/* 버튼 그룹 */
-.button-group {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-}
-.button {
-  background-color: #6366F1;
-  color: #ffffff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.button:hover {
-  background-color: #4F46E5;
-}    
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* 헤더 전체 */
+  .site-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  /* 로고 영역 */
+  .header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* 로고 + 이미지 */
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .site-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    gap: 24px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+  }
+  
+  /* 메인 배너 */
+  .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px;
+  }
+  
+  .banner-text {
+    flex: 1;
+    text-align: left; /* 왼쪽 정렬 */
+  }
+  
+  .banner-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .banner-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* 버튼 그룹 */
+  .button-group {
+    display: flex;
+    gap: 12px;
+  }
+  .button {
+    background-color: #6366F1;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: #4F46E5;
+  }
+    /* 배너 오른쪽 이미지 자리 */
+  .banner-image {
+    flex: 1;
+    height: 400px;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 18px;
+    border-radius: 12px;
+  }
 <!-- 세션 관련 css -->
     
     section {
@@ -178,60 +208,39 @@ body {
   <!-- 로고 + 메뉴 헤더 -->
 <header class="site-header">
   <div class="header-container">
-    <div class="logo">MIMECAT</div> <!-- 가운데 오게 -->
-    <nav class="nav-menu">
-      <a href="#">메뉴1</a>
-      <a href="#">메뉴2</a>
-      <a href="#">메뉴3</a>
-    </nav>
+    <div class="logo-area">
+      <img src="로고이미지.png" alt="로고" class="logo-image"> 
+      <div class="site-title">MIMECAT</div>
+    </div>
   </div>
+  <nav class="nav-menu">
+    <a href="#">메뉴1</a>
+    <a href="#">메뉴2</a>
+    <a href="#">메뉴3</a>
+    <a href="#">메뉴4</a>
+  </nav>
 </header>
 
 <!-- 메인 배너 -->
 <section class="main-banner">
-  <div class="container">
-    <h1>MIMECAT에 오신 것을 환영합니다!</h1>
-    <p>다양한 스티커, 고품질 출력물, 간편한 이미지 편집 도구를 제공하는 맞춤형 서비스입니다.<br>
-       개인과 기업 모두를 위한 최신 트렌드의 디자인과 빠른 제작으로 여러분의 창의성을 실현해드립니다.
-    </p>
-    <div class="button-group">
-      <button class="button">지금 주문하기</button>
-      <button class="button">제작 주문하기</button>
-    </div>
-  </div>
-</section>
-
-  
-<!-- <header class="site-header">
-  <div class="header-container">
-    <div class="logo">
-      <img src="로고이미지경로.png" alt="MIMECAT 로고" class="logo-image">
-      <span class="site-title">MIMECAT</span>
-    </div>
-    <nav class="menu">
-      <ul class="menu-list">
-        <li class="menu-item">메뉴1</li>
-        <li class="menu-item">메뉴2</li>
-        <li class="menu-item">메뉴3</li>
-        <li class="menu-item">메뉴4</li>
-      </ul>
-    </nav>
-  </div>
-</header>
-  
-  <section calss="main-banner">
-    <div class="container">
+  <div class="banner-container">
+    <div class="banner-text">
       <h1>MIMECAT에 오신 것을 환영합니다!</h1>
       <p>다양한 스티커, 고품질 출력물, 간편한 이미지 편집 도구를 제공하는 맞춤형 서비스입니다.<br>
-         개인과 기업 모두를 위한 최신 트렌드의 디자인과 빠른 제작으로 여러분의 창의성을 실현해드립니다.</p>
+      개인과 기업 모두를 위한 최신 트렌드의 디자인과 빠른 제작으로 여러분의 창의성을 실현해드립니다.
+      </p>
       <div class="button-group">
         <button class="button">지금 주문하기</button>
         <button class="button">제작 주문하기</button>
       </div>
     </div>
-  </section> -->
+    <div class="banner-image">
+      이미지 자리
+    </div>
+  </div>
+</section>
 
-  <section>
+<section>
   <div class="container">  
     <div class="collection-wrapper">
       <div class="image-placeholder">이미지 영역</div>
