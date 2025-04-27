@@ -49,6 +49,67 @@
     .button:hover {
       background-color: #4F46E5;
     }
+
+<!-- 메인페이지 헤더 css -->
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 999; /* 다른 것들 위에 올라오게 */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .header-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .logo-image {
+      height: 40px; /* 로고 사이즈 */
+    }
+    
+    .site-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+    }
+    
+    .menu {
+      margin-top: 12px;
+    }
+    
+    .menu-list {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .menu-item {
+      font-size: 16px;
+      color: #374151;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    
+    .menu-item:hover {
+      color: #6366F1; /* 메뉴 hover 색 */
+    }
+
+<!-- 세션 관련 css -->
+    
     section {
       margin-top: 80px;
     }
@@ -125,6 +186,23 @@
 </head>
 <body>
 
+<header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <img src="로고이미지경로.png" alt="MIMECAT 로고" class="logo-image">
+      <span class="site-title">MIMECAT</span>
+    </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-item">메뉴1</li>
+        <li class="menu-item">메뉴2</li>
+        <li class="menu-item">메뉴3</li>
+        <li class="menu-item">메뉴4</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
   <header>
     <div class="container">
       <h1>MIMECAT에 오신 것을 환영합니다!</h1>
