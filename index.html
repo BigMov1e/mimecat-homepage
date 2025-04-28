@@ -281,11 +281,6 @@
     gap: 40px;
     }
     
-    .print-service-image img {
-      width: 100%;
-      max-width: 400px;
-    }
-    
     .print-service-content {
       flex: 1;
     }
@@ -302,8 +297,17 @@
     
     .service-item {
       flex: 1;
+	  text-align: center;
     }
-    
+	
+    .service-icon {
+	  width: 40px;
+	  height: 40px;
+	  margin: 0 auto 10px;
+	  background-color: #e0e0e0; /* 임시 배경색 */
+	  border-radius: 8px; /* 살짝 둥글게 */
+	}
+	
     .service-item .icon {
       font-size: 24px;
       margin-bottom: 10px;
@@ -389,6 +393,7 @@
   </div>
 </section>
 
+<!-- 스티커 컬렉션 -->
 <section>
   <div class="container">  
     <div class="collection-wrapper">
@@ -438,26 +443,30 @@
   
   <section class="print-service">
     <div class="print-service-container">
-      <div class="print-service-image">
-        <img src="image/3_.png" alt="출력 서비스 이미지">
-      </div>
+      <div class="image-placeholder">이미지 영역</div>
       <div class="print-service-content">
-        <h2>출력 서비스</h2>
-        <div class="service-items">
-          <div class="service-item">
-            <div class="icon">아이콘 자리</div>
-            <h3>고해상도 포스터</h3>
-            <p>선명한 색상과 디테일이 살아있는 고품질 포스터 출력 서비스</p>
-          </div>
-          <div class="service-item">
-            <div class="icon">아이콘 자리</div>
-            <h3>배너 및 현수막</h3>
-            <p>실내외 모두 사용 가능한 내구성 높은 대형 출력물</p>
-          </div>
-          <div class="service-item">
-            <div class="icon">아이콘 자리</div>
-            <h3>캔버스 프린팅</h3>
-            <p>예술 작품처럼 고급스러운 질감의 캔버스 출력 서비스</p>
+		<h2>출력 서비스</h2>
+		<div class="service-items">
+			<div class="service-item">
+			  <div class="service-icon">
+				<!-- 아이콘 이미지 자리 -->
+			  </div>
+			  <h3>고해상도 포스터</h3>
+			  <p>선명한 색상과 디테일이 살아있는 고품질 포스터 출력 서비스</p>
+			</div>
+			<div class="service-item">
+			  <div class="service-icon">
+				<!-- 아이콘 이미지 자리 -->
+			  </div>
+			  <h3>배너 및 현수막</h3>
+			  <p>실내외 모두 사용 가능한 내구성 높은 대형 출력물</p>
+			</div>
+			<div class="service-item">
+			  <div class="service-icon">
+				<!-- 아이콘 이미지 자리 -->
+			  </div>
+			  <h3>캔버스 프린팅</h3>
+			  <p>예술 작품처럼 고급스러운 질감의 캔버스 출력 서비스</p>
           </div>
         </div>
       </div>
