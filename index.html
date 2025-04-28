@@ -369,65 +369,78 @@
 
 /* 결제 안내 섹션 */
 .payment-guide {
-  padding: 80px 20px;
-  background: #ffffff;
+  padding: 100px 0;
+  text-align: center;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.section-title {
+.payment-guide .section-title {
   font-size: 36px;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .payment-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 120px; /* 양쪽 간격 넓게 */
+  grid-template-columns: repeat(2, 280px);
+  grid-template-rows: repeat(2, 280px);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .payment-item {
+  position: relative;
+  background-color: #E7E5F7;
   display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.shape {
-  width: 120px;
-  height: 120px;
-  background-color: #E4E1F7;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
 }
 
-/* 반쪽 원 스타일 */
-.shape-left {
-  border-top-left-radius: 60px;
-  border-bottom-left-radius: 60px;
+.payment-item.top-left {
+  border-top-left-radius: 140px;
+}
+.payment-item.top-right {
+  border-top-right-radius: 140px;
+}
+.payment-item.bottom-left {
+  border-bottom-left-radius: 140px;
+}
+.payment-item.bottom-right {
+  border-bottom-right-radius: 140px;
 }
 
-.shape-right {
-  border-top-right-radius: 60px;
-  border-bottom-right-radius: 60px;
+.payment-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 180%;
+  text-align: left;
+  padding: 0 20px;
 }
 
-.text h3 {
+.payment-text.left {
+  text-align: left;
+  left: 100%;
+}
+
+.payment-text.right {
+  text-align: right;
+  right: 100%;
+}
+
+.payment-text h3 {
   font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
-.text p {
+.payment-text p {
   font-size: 16px;
   color: #555;
 }
-
 
   </style>
 </head>
@@ -648,44 +661,31 @@
 </section>
 
 <section class="payment-guide">
-  <div class="container">
-    <h2 class="section-title">결제 안내</h2>
-    <div class="payment-grid">
-      <div class="payment-item">
-        <div class="shape shape-left">
-          <!-- 아이콘 자리 -->
-        </div>
-        <div class="text">
-          <h3>신용카드</h3>
-          <p>모든 국내외 신용카드 결제 가능</p>
-        </div>
+  <h2 class="section-title">결제 안내</h2>
+  
+  <div class="payment-grid">
+    <div class="payment-item top-left">
+      <div class="payment-text right">
+        <h3>신용카드</h3>
+        <p>모든 국내외 신용카드 결제 가능</p>
       </div>
-      <div class="payment-item">
-        <div class="shape shape-right">
-          <!-- 아이콘 자리 -->
-        </div>
-        <div class="text">
-          <h3>계좌이체</h3>
-          <p>실시간 계좌이체 및 무통장입금 지원</p>
-        </div>
+    </div>
+    <div class="payment-item top-right">
+      <div class="payment-text left">
+        <h3>계좌이체</h3>
+        <p>실시간 계좌이체 및 무통장입금 지원</p>
       </div>
-      <div class="payment-item">
-        <div class="shape shape-left">
-          <!-- 아이콘 자리 -->
-        </div>
-        <div class="text">
-          <h3>무료배송</h3>
-          <p>30,000원 이상 구매 시 전국 무료배송</p>
-        </div>
+    </div>
+    <div class="payment-item bottom-left">
+      <div class="payment-text right">
+        <h3>무료배송</h3>
+        <p>30,000원 이상 구매 시 전국 무료배송</p>
       </div>
-      <div class="payment-item">
-        <div class="shape shape-right">
-          <!-- 아이콘 자리 -->
-        </div>
-        <div class="text">
-          <h3>간편결제</h3>
-          <p>네이버페이, 카카오페이 등 간편결제 지원</p>
-        </div>
+    </div>
+    <div class="payment-item bottom-right">
+      <div class="payment-text left">
+        <h3>간편결제</h3>
+        <p>네이버페이, 카카오페이 등 간편결제 지원</p>
       </div>
     </div>
   </div>
