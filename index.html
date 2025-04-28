@@ -316,56 +316,32 @@
 	  
 /* 직접 제작 스티커 주문방법 안내 섹셔 */
 .sticker-order-guide {
-  padding: 100px 20px;
-  background-color: #f5f5f5;
+  padding: 60px 20px;
+  background-color: #ffffff;
 }
 
-.guide-container {
-  display: flex;
-  max-width: 1280px;
+.order-container {
+  max-width: 1200px;
   margin: 0 auto;
-  background: #ffffff;
-  overflow: hidden;
-  border-radius: 12px;
 }
 
-.guide-left {
-  flex: 1;
-  background-color: #e0e0e0; /* 왼쪽 이미지 영역 */
-  min-height: 600px;
-}
-
-.guide-right {
-  flex: 1;
-  padding: 60px 40px;
+.order-steps {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.guide-right h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.guide-items {
-  display: flex;
-  flex-wrap: wrap;
   gap: 40px;
+  margin-top: 40px;
 }
 
-.guide-item {
-  width: calc(50% - 20px);
+.step {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  align-items: center;
+  gap: 30px;
 }
 
-.icon-box {
-  width: 60px;
-  height: 80px;
-  background-color: #E0DDF4; /* 연보라색 박스 */
+.icon-placeholder {
+  width: 80px;
+  height: 100px;
+  background-color: #E0DDF4; /* 연보라색 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,15 +349,16 @@
   overflow: hidden;
 }
 
-.text-box h3 {
-  font-size: 1.25rem;
+.step-text h3 {
+  font-size: 1.5rem;
   margin-bottom: 8px;
 }
 
-.text-box p {
+.step-text p {
   font-size: 1rem;
   color: #555;
 }
+
 
 
   </style>
@@ -544,64 +521,63 @@
       </div>
     </div>
   </section>
-	
-	<section class="sticker-order-guide">
-	  <div class="guide-container">
-	
-	    <div class="guide-left">
-	      <!-- 왼쪽 비어있는 이미지 공간 -->
-	    </div>
-	
-	    <div class="guide-right">
-	      <h2>직접 제작 스티커 주문 방법 안내</h2>
-	
-	      <div class="guide-items">
-	        <div class="guide-item">
-	          <div class="icon-box">
-	            <!-- 나중에 아이콘(SVG 이미지) 삽입 -->
-	          </div>
-	          <div class="text-box">
-	            <h3>디자인 업로드</h3>
-	            <p>원하는 이미지를 업로드하거나 온라인 에디터로 직접 디자인하세요.</p>
-	          </div>
-	        </div>
-	
-	        <div class="guide-item">
-	          <div class="icon-box">
-	            <!-- 나중에 아이콘 삽입 -->
-	          </div>
-	          <div class="text-box">
-	            <h3>옵션 선택</h3>
-	            <p>사이즈, 재질, 수량 등 원하는 옵션을 선택합니다.</p>
-	          </div>
-	        </div>
-	
-	        <div class="guide-item">
-	          <div class="icon-box">
-	            <!-- 나중에 아이콘 삽입 -->
-	          </div>
-	          <div class="text-box">
-	            <h3>결제하기</h3>
-	            <p>다양한 결제 방법 중 편리한 방법으로 결제를 진행합니다.</p>
-	          </div>
-	        </div>
-	
-	        <div class="guide-item">
-	          <div class="icon-box">
-	            <!-- 나중에 아이콘 삽입 -->
-	          </div>
-	          <div class="text-box">
-	            <h3>배송 받기</h3>
-	            <p>평균 1-3일 내에 고품질 제품을 받아보세요.</p>
-	          </div>
-	        </div>
-	
-	      </div>
-	    </div>
-	
-	  </div>
-	</section>
 
+<section class="sticker-order-guide">
+  <div class="order-container">
+    <div class="image-placeholder">이미지 영역</div>
+    <div class="order-left">
+      <!-- 나중에 이미지 들어갈 부분 -->
+    </div>
+
+    <div class="order-right">
+      <h2>직접 제작 스티커 주문 방법 안내</h2>
+
+      <div class="order-steps">
+        <div class="step">
+          <div class="icon-placeholder">
+            <img src="/images/step1.svg" alt="디자인 업로드 아이콘">
+          </div>
+          <div class="step-text">
+            <h3>디자인 업로드</h3>
+            <p>원하는 이미지를 업로드하거나 온라인 에디터로 직접 디자인하세요.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-placeholder">
+            <img src="/images/step2.svg" alt="옵션 선택 아이콘">
+          </div>
+          <div class="step-text">
+            <h3>옵션 선택</h3>
+            <p>사이즈, 재질, 수량 등 원하는 옵션을 선택합니다.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-placeholder">
+            <img src="/images/step3.svg" alt="결제하기 아이콘">
+          </div>
+          <div class="step-text">
+            <h3>결제하기</h3>
+            <p>다양한 결제 방법 중 편리한 방법으로 결제를 진행합니다.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-placeholder">
+            <img src="/images/step4.svg" alt="배송 받기 아이콘">
+          </div>
+          <div class="step-text">
+            <h3>배송 받기</h3>
+            <p>평균 1-3일 내에 고품질 제품을 받아보세요.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <section>
     <div class="container">
