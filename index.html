@@ -367,7 +367,70 @@
   color: #555;
 }
 
+/* 결제 안내 섹션 */
+.payment-guide {
+  padding: 80px 20px;
+  background: #ffffff;
+}
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.payment-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.shape {
+  width: 120px;
+  height: 120px;
+  background-color: #E4E1F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape-top-left {
+  border-top-left-radius: 70px;
+}
+
+.shape-top-right {
+  border-top-right-radius: 70px;
+}
+
+.shape-bottom-left {
+  border-bottom-left-radius: 70px;
+}
+
+.shape-bottom-right {
+  border-bottom-right-radius: 70px;
+}
+
+.text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 16px;
+  color: #555;
+}
 
   </style>
 </head>
@@ -587,12 +650,49 @@
 	</div>
 </section>
 
-  <section>
-    <div class="container">
-      <h2 class="section-title">결제 및 배송 안내</h2>
-      <div class="image-placeholder">결제 및 배송 안내 이미지 영역</div>
+  <section class="payment-guide">
+  <div class="container">
+    <h2 class="section-title">결제 안내</h2>
+    <div class="payment-grid">
+      <div class="payment-item">
+        <div class="shape shape-top-left">
+          <!-- 아이콘 자리 -->
+        </div>
+        <div class="text">
+          <h3>신용카드</h3>
+          <p>모든 국내외 신용카드 결제 가능</p>
+        </div>
+      </div>
+      <div class="payment-item">
+        <div class="shape shape-top-right">
+          <!-- 아이콘 자리 -->
+        </div>
+        <div class="text">
+          <h3>계좌이체</h3>
+          <p>실시간 계좌이체 및 무통장입금 지원</p>
+        </div>
+      </div>
+      <div class="payment-item">
+        <div class="shape shape-bottom-left">
+          <!-- 아이콘 자리 -->
+        </div>
+        <div class="text">
+          <h3>무료배송</h3>
+          <p>30,000원 이상 구매 시 전국 무료배송</p>
+        </div>
+      </div>
+      <div class="payment-item">
+        <div class="shape shape-bottom-right">
+          <!-- 아이콘 자리 -->
+        </div>
+        <div class="text">
+          <h3>간편결제</h3>
+          <p>네이버페이, 카카오페이 등 간편결제 지원</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section>
     <div class="container">
