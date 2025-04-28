@@ -381,13 +381,14 @@
 .section-title {
   font-size: 36px;
   font-weight: 700;
+  text-align: center;
   margin-bottom: 60px;
 }
 
 .payment-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 40px 120px; /* 양쪽 간격 넓게 */
 }
 
 .payment-item {
@@ -405,20 +406,15 @@
   justify-content: center;
 }
 
-.shape-top-left {
-  border-top-left-radius: 70px;
+/* 반쪽 원 스타일 */
+.shape-left {
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
 }
 
-.shape-top-right {
-  border-top-right-radius: 70px;
-}
-
-.shape-bottom-left {
-  border-bottom-left-radius: 70px;
-}
-
-.shape-bottom-right {
-  border-bottom-right-radius: 70px;
+.shape-right {
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 
 .text h3 {
@@ -431,6 +427,7 @@
   font-size: 16px;
   color: #555;
 }
+
 
   </style>
 </head>
@@ -650,12 +647,12 @@
 	</div>
 </section>
 
-  <section class="payment-guide">
+<section class="payment-guide">
   <div class="container">
     <h2 class="section-title">결제 안내</h2>
     <div class="payment-grid">
       <div class="payment-item">
-        <div class="shape shape-top-left">
+        <div class="shape shape-left">
           <!-- 아이콘 자리 -->
         </div>
         <div class="text">
@@ -664,7 +661,7 @@
         </div>
       </div>
       <div class="payment-item">
-        <div class="shape shape-top-right">
+        <div class="shape shape-right">
           <!-- 아이콘 자리 -->
         </div>
         <div class="text">
@@ -673,7 +670,7 @@
         </div>
       </div>
       <div class="payment-item">
-        <div class="shape shape-bottom-left">
+        <div class="shape shape-left">
           <!-- 아이콘 자리 -->
         </div>
         <div class="text">
@@ -682,7 +679,7 @@
         </div>
       </div>
       <div class="payment-item">
-        <div class="shape shape-bottom-right">
+        <div class="shape shape-right">
           <!-- 아이콘 자리 -->
         </div>
         <div class="text">
@@ -693,6 +690,7 @@
     </div>
   </div>
 </section>
+
 
   <section>
     <div class="container">
