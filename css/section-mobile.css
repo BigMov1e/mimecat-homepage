@@ -1,7 +1,6 @@
 /* =========================
    Base Styles (Mobile)
    ========================= */
-
 /* ========== 모바일 대응 (화면 너비 768px 이하) ========== */
 @media screen and (max-width: 768px) {
   .header-container,
@@ -23,7 +22,12 @@
     transform: none;
     margin-top: 8px;
   }
-   
+
+  .nav-container {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
   .banner-text h1 {
     font-size: 28px;
   }
@@ -84,9 +88,5 @@
   .timeline .icon {
     margin: 0 0 12px 0;
   }
-
-   /* 모바일에서 서브메뉴 숨기기 */
-   .submenu {
-       display: none !important;
-   }
 }
+
