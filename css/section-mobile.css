@@ -102,16 +102,13 @@
   }
 
   .nav-menu.active {
-    display: flex;
+    display: flex !important;
+    flex-direction: column;
   }
 
   .nav-container {
     flex-direction: column;
     gap: 20px;
     padding: 16px 0;
-  }
-
-  .nav-container.active {
-    display: flex !important;
   }
 }
