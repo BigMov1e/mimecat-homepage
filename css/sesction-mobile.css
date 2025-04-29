@@ -1,0 +1,92 @@
+/* =========================
+   Base Styles (Mobile)
+   ========================= */
+
+/* ========== 모바일 대응 (화면 너비 768px 이하) ========== */
+@media screen and (max-width: 768px) {
+  .header-container,
+  .nav-container,
+  .banner-container,
+  .print-service-container,
+  .sticker-order-guide-container,
+  .support-content,
+  .promo-content,
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .site-title {
+    position: static;
+    transform: none;
+    margin-top: 8px;
+  }
+
+  .nav-container {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .banner-text p,
+  .description-box,
+  .community-description,
+  .text-block p,
+  .faq-text {
+    font-size: 15px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .two-column,
+  .collection-wrapper,
+  .order-steps {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .image-placeholder,
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .payment-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .payment-text {
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .timeline li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline .icon {
+    margin: 0 0 12px 0;
+  }
+}
