@@ -519,6 +519,74 @@
 	  color: #333;
 	  line-height: 1.6;
 	}
+
+/* 이벤트&프로모션 섹션 */
+	.promo-section {
+	  background-color: #fff;
+	  padding: 80px 0;
+	}
+	
+	.promo-content {
+	  display: flex;
+	  gap: 60px;
+	  align-items: flex-start;
+	}
+	
+	.promo-list {
+	  flex: 1;
+	}
+	
+	.promo-list h2 {
+	  font-size: 2.5rem;
+	  font-weight: 700;
+	  margin-bottom: 40px;
+	}
+	
+	.timeline {
+	  position: relative;
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+	}
+	
+	.timeline::before {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 24px;
+	  width: 2px;
+	  background-color: #d5d4f0; /* 연보라색 수직선 */
+	}
+	
+	.timeline li {
+	  display: flex;
+	  align-items: flex-start;
+	  margin-bottom: 40px;
+	  position: relative;
+	  padding-left: 48px;
+	}
+	
+	.timeline .icon {
+	  width: 40px;
+	  height: 40px;
+	  background-color: #e6e5f8;
+	  border-radius: 12px;
+	  margin-right: 20px;
+	  flex-shrink: 0;
+	}
+	
+	.text-block .title {
+	  font-weight: 600;
+	  font-size: 1.1rem;
+	  margin-bottom: 6px;
+	}
+	
+	.text-block .desc {
+	  color: #333;
+	  line-height: 1.6;
+	}
+
   </style>
 </head>
 <body>
@@ -805,7 +873,49 @@
     </p>
   </div>
 </section>
-  
+
+<section class="promo-section">
+  <div class="container">
+    <div class="promo-content">
+      <div class="image-placeholder"></div>
+
+      <div class="promo-list">
+        <h2>이벤트 & 프로모션</h2>
+        <ul class="timeline">
+          <li>
+            <div class="icon"></div>
+            <div class="text-block">
+              <p class="title">신규 회원 특별 혜택</p>
+              <p class="desc">회원가입 시 5,000원 할인 쿠폰과 무료 샘플 키트 증정</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon"></div>
+            <div class="text-block">
+              <p class="title">주간 특가 상품</p>
+              <p class="desc">매주 월요일 업데이트되는 특별 할인 상품을 놓치지 마세요</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon"></div>
+            <div class="text-block">
+              <p class="title">시즌별 프로모션</p>
+              <p class="desc">여름 맞이 방수 스티커 20% 할인 프로모션 진행 중</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon"></div>
+            <div class="text-block">
+              <p class="title">친구 추천 이벤트</p>
+              <p class="desc">친구 추천 시 추천인과 친구 모두에게 3,000포인트 적립</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
 
