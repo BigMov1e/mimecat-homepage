@@ -4,7 +4,6 @@
 /* ========== 모바일 대응 (화면 너비 768px 이하) ========== */
 @media screen and (max-width: 768px) {
   .header-container,
-  .nav-container,
   .banner-container,
   .print-service-container,
   .sticker-order-guide-container,
@@ -15,6 +14,30 @@
     align-items: center;
     text-align: center;
     padding: 16px;
+  }
+   
+   .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    display: none; /* 기본적으로 숨김 */
+  }
+
+  .nav-container.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block; /* 모바일에서만 보이기 */
+  }
+
+  .submenu {
+    display: none !important; /* 모바일에서는 submenu 안 보임 */
+  }
+
+  .menu-item > a {
+    padding: 12px;
+    font-size: 16px;
   }
 
   .site-title {
