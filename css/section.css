@@ -85,6 +85,10 @@ body {
   background: white;
 }
 
+.nav-container li a{
+  font-size: 18px;
+}
+
 .submenu {
   display: none;
   position: absolute;
