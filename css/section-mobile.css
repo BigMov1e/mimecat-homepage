@@ -24,9 +24,10 @@
     margin-top: 8px;
   }
 
-  .nav-container {
-    gap: 24px;
+   .nav-container {
     flex-wrap: wrap;
+    gap: 20px; /* 모바일에서는 간격 좁게 */
+    padding: 10px 12px;
   }
 
   .banner-text h1 {
@@ -89,4 +90,36 @@
   .timeline .icon {
     margin: 0 0 12px 0;
   }
+
+  .menu-item > a {
+    font-size: 16px; /* 폰트 작게 */
+    padding: 6px 8px; /* 패딩도 작게 */
+  }
+
+  /* 서브메뉴 스타일 */
+  .submenu {
+    position: static; /* 절대 위치 -> 일반 흐름으로 변경 */
+    display: none; /* 기본은 숨김 */
+    width: 100%; /* 핸드폰 너비 꽉 채움 */
+    margin-top: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: none;
+  }
+
+  .menu-item:hover .submenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submenu a {
+    font-size: 14px; /* 서브메뉴 폰트 더 작게 */
+    padding: 10px;
+    text-align: center; /* 가운데 정렬 */
+    border-bottom: 1px solid #f3f4f6; /* 밑줄 */
+  }
+
+  .submenu a:last-child {
+    border-bottom: none; /* 마지막 서브메뉴는 밑줄 제거 */
+  }
+
 }
