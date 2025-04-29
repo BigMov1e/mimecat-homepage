@@ -1,0 +1,109 @@
+@media screen and (max-width: 1024px) {
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  .site-title {
+    position: static;
+    transform: none;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-image {
+    height: 300px;
+  }
+
+  .two-column {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .collection-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    height: auto;
+  }
+
+  .print-service-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-items {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sticker-order-guide-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .payment-guide .section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .payment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .support-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .promo-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
