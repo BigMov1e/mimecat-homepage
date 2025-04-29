@@ -89,6 +89,10 @@ body {
   font-size: 18px;
 }
 
+.nav-container:hover .submenu {
+  display: flex;
+}
+
 .submenu {
   display: none;
   position: absolute;
@@ -110,8 +114,13 @@ body {
   display: block;
 }
 
+.submenu a:hover {
+  background-color: #f3f4f6;
+}
+
 .nav-links {
 }
+
 /* ========== 메인 배너 ========== */
 .main-banner {
   background-color: #000000;
