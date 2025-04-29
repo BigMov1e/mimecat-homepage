@@ -442,6 +442,60 @@
   color: #555;
 }
 
+/*고객지원 섹션*/
+.support-section {
+  padding: 80px 0;
+  background-color: #f2f2f2;
+}
+
+.support-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.faq-text {
+  flex: 1;
+}
+
+.faq-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.faq-item {
+  margin-bottom: 32px;
+}
+
+.question {
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.answer {
+  background-color: white;
+  padding: 16px;
+  border-left: 4px solid #e0e0e0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.image-placeholder {
+  width: 380px;
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #999;
+  font-size: 1rem;
+}
+
   </style>
 </head>
 <body>
@@ -692,12 +746,31 @@
 </section>
 
 
-  <section>
-    <div class="container">
-      <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
-      <div class="image-placeholder">FAQ 이미지 영역</div>
+<section class="support-section">
+  <div class="container">
+    <div class="support-content">
+      <div class="faq-text">
+        <h2>고객 지원</h2>
+
+        <div class="faq-item">
+          <p class="question">▼ 주문한 스티커의 배송 현황은 어떻게 확인하나요?</p>
+          <p class="answer">'마이페이지 &gt; 주문내역'에서 실시간으로 배송 상태를 확인하실 수 있습니다. 또한 배송이 시작되면 등록하신 연락처로 배송 알림 메시지가 발송됩니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <p class="question">▼ 맞춤 디자인 의뢰는 어떻게 하나요?</p>
+          <p class="answer">'1:1 문의' 게시판이나 카카오톡 채널을 통해 문의해 주시면 디자인 전문가가 24시간 이내에 연락드립니다. 상세한 요구사항을 적어주시면 보다 정확한 견적을 안내해 드립니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <p class="question">▼ 스티커 제작 후 수정이 가능한가요?</p>
+          <p class="answer">제작이 시작된 후에는 수정이 불가능합니다. 최종 디자인 확인 단계에서 꼼꼼히 확인해 주세요. 오타나 색상 오류 등 당사의 실수로 인한 문제는 무상으로 재제작해 드립니다.</p>
+        </div>
+      </div>
+      <div class="image-placeholder"></div>
     </div>
-  </section>
+  </div>
+</section>
 
   
 </body>
