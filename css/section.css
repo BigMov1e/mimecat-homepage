@@ -2,22 +2,24 @@
    Base Styles (Reset, Common)
    ========================= */
 
-/* ========== 기본 설정 ========== */
+/* =========================== */
+/* 기본 설정 */
+/* =========================== */
 body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   font-family: 'Noto Sans KR', sans-serif;
 }
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-
-/* ========== 헤더 영역 ========== */
+/* =========================== */
+/* 헤더 */
+/* =========================== */
 .site-header {
   position: sticky;
   top: 0;
@@ -26,7 +28,6 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
 .header-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -35,18 +36,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .logo-image-area {
   flex: 1;
   display: flex;
   align-items: center;
 }
-
 .logo-image {
   width: 40px;
   height: 40px;
 }
-
 .site-title {
   position: absolute;
   left: 50%;
@@ -55,44 +53,32 @@ body {
   font-weight: 700;
   color: #111827;
 }
-
 .empty-space {
   flex: 1;
 }
-
-
-  /* ========== 내비게이션 ========== */
 .nav-menu {
-  display: flex;
-  gap: 48px;
-  justify-content: space-between;
-  align-items: center;
   border-top: 1px solid #e5e7eb;
-  background-color: #000000;  
+  background-color: #ffffff;
 }
-
 .nav-container {
-  display: flex;
-  padding-left: 0;
+  max-width: 1280px;
   margin: 0 auto;
-}
-
-.nav-container li {
   padding: 12px 20px;
-}
-
-.nav-container li:hover {
-  background: white;
-}
-
-.nav-container li a{
-  font-size: 18px;
-}
-
-.nav-container li:hover .submenu {
   display: flex;
+  justify-content: center;
+  gap: 48px;
+  position: relative;
 }
-
+.menu-item {
+  position: relative;
+}
+.menu-item > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 12px;
+  display: block;
+}
 .submenu {
   display: none;
   position: absolute;
@@ -105,29 +91,33 @@ body {
   z-index: 1000;
   flex-direction: column;
 }
-
 .submenu a {
   padding: 10px;
   text-decoration: none;
-  color: #000000;
+  color: #374151;
   font-size: 16px;
   display: block;
 }
-
 .submenu a:hover {
   background-color: #f3f4f6;
 }
-
-.nav-links {
+.menu-item:hover .submenu {
+  display: flex;
+}
+.nav-container a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
 }
 
-/* ========== 메인 배너 ========== */
+/* =========================== */
+/* 메인 배너 */
+/* =========================== */
 .main-banner {
   background-color: #000000;
   color: #ffffff;
   padding: 80px 0;
 }
-
 .banner-container {
   display: flex;
   align-items: center;
@@ -137,29 +127,24 @@ body {
   padding: 0 20px;
   gap: 40px;
 }
-
 .banner-text {
   flex: 1;
   text-align: left;
 }
-
 .banner-text h1 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-
 .banner-text p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
 .button-group {
   display: flex;
   gap: 12px;
 }
-
 .button {
   background-color: #6366F1;
   color: #ffffff;
@@ -170,11 +155,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .button:hover {
   background-color: #4F46E5;
 }
-
 .banner-image {
   flex: 1;
   height: 400px;
@@ -187,18 +170,17 @@ body {
   border-radius: 12px;
 }
 
-
-/* ========== 컬렉션 섹션 ========== */
+/* =========================== */
+/* 컬렉션 섹션 */
+/* =========================== */
 section {
   margin-bottom: 30px;
 }
-
 .section-title {
   font-size: 25px;
   font-weight: 700;
   text-align: center;
 }
-
 .image-placeholder {
   width: 500px;
   height: 800px;
@@ -211,37 +193,31 @@ section {
   color: #94a3b8;
   font-size: 18px;
 }
-
 .two-column {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
 }
-
 .two-column .text-content {
   flex: 1;
   min-width: 300px;
 }
-
 .two-column .image-placeholder {
   flex: 1;
   min-width: 300px;
   height: 300px;
 }
-
 .collection-grid {
   display: flex;
   flex-direction: column;
   gap: 24px;
   flex: 1;
 }
-
 .collection-item {
   display: flex;
   justify-content: center;
 }
-
 .description-box {
   background-color: #E0E7FF;
   padding: 20px;
@@ -253,33 +229,30 @@ section {
   text-align: left;
   line-height: 1.6;
 }
-
 .collection-wrapper {
   display: flex;
   gap: 40px;
   align-items: flex-start;
 }
-
 .sticker-title {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 12px;
   color: #1f2937;
 }
-
 .sticker-description {
   font-size: 16px;
   color: #4b5563;
   line-height: 1.6;
 }
 
-
-/* ========== 출력 서비스 섹션 ========== */
+/* =========================== */
+/* 출력서비스 섹션 */
+/* =========================== */
 .print-service {
   padding: 60px 20px;
   background-color: #ffffff;
 }
-
 .print-service-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -287,26 +260,21 @@ section {
   align-items: center;
   gap: 40px;
 }
-
 .print-service-content {
   flex: 1;
 }
-
 .print-service-content h2 {
   font-size: 32px;
   margin-bottom: 30px;
 }
-
 .service-items {
   display: flex;
   gap: 40px;
 }
-
 .service-item {
   flex: 1;
   text-align: center;
 }
-
 .service-icon {
   width: 40px;
   height: 40px;
@@ -314,19 +282,18 @@ section {
   background-color: #e0e0e0;
   border-radius: 8px;
 }
-
 .service-item .icon {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-
-/* ========== 스티커 주문 가이드 ========== */
+/* =========================== */
+/* 스티커 주문 가이드 섹션 */
+/* =========================== */
 .sticker-order-guide {
   padding: 60px 20px;
   background-color: #ffffff;
 }
-
 .sticker-order-guide-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -334,25 +301,21 @@ section {
   align-items: center;
   gap: 40px;
 }
-
 .order-container {
   max-width: 1280px;
   margin: 0 auto;
 }
-
 .order-steps {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin-top: 40px;
 }
-
 .step {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-
 .icon-placeholder {
   width: 80px;
   height: 100px;
@@ -363,30 +326,27 @@ section {
   border-radius: 8px;
   overflow: hidden;
 }
-
 .step-text h3 {
   font-size: 1.5rem;
   margin-bottom: 8px;
 }
-
 .step-text p {
   font-size: 1rem;
   color: #555;
 }
 
-
-/* ========== 결제 안내 ========== */
+/* =========================== */
+/* 결제 안내 섹션 */
+/* =========================== */
 .payment-guide {
   padding: 100px 0;
   text-align: center;
 }
-
 .payment-guide .section-title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 80px;
 }
-
 .payment-grid {
   display: grid;
   grid-template-columns: repeat(2, 140px);
@@ -396,7 +356,6 @@ section {
   align-items: center;
   margin: 0 auto;
 }
-
 .payment-item {
   position: relative;
   background-color: #E7E5F7;
@@ -406,23 +365,18 @@ section {
   width: 140px;
   height: 140px;
 }
-
 .payment-item.top-left {
   border-top-left-radius: 70px;
 }
-
 .payment-item.top-right {
   border-top-right-radius: 70px;
 }
-
 .payment-item.bottom-left {
   border-bottom-left-radius: 70px;
 }
-
 .payment-item.bottom-right {
   border-bottom-right-radius: 70px;
 }
-
 .payment-text {
   position: absolute;
   top: 50%;
@@ -431,62 +385,53 @@ section {
   text-align: left;
   padding: 0 20px;
 }
-
 .payment-text.left {
   text-align: left;
   left: 100%;
 }
-
 .payment-text.right {
   text-align: right;
   right: 100%;
 }
-
 .payment-text h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
 }
-
 .payment-text p {
   font-size: 16px;
   color: #555;
 }
 
-
-/* ========== 고객지원 ========== */
+/* =========================== */
+/* 고객지원 섹션 */
+/* =========================== */
 .support-section {
   padding: 80px 0;
   background-color: #ffffff;
 }
-
-.support-content {
+support-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
 }
-
 .faq-text {
   flex: 1;
 }
-
 .faq-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 32px;
 }
-
 .faq-item {
   margin-bottom: 32px;
 }
-
 .question {
   font-weight: 600;
   margin-bottom: 12px;
   font-size: 1.1rem;
 }
-
 .answer {
   background-color: white;
   padding: 16px;
@@ -495,26 +440,24 @@ section {
   line-height: 1.6;
 }
 
-
-/* ========== 커뮤니티 섹션 ========== */
+/* =========================== */
+/* 커뮤니티 섹션 */
+/* =========================== */
 .community-section {
   padding: 80px 0;
   background-color: #ffffff;
 }
-
 .community-section .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   text-align: center;
 }
-
 .community-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
-
 .community-image-space {
   height: 300px;
   background-color: #ddd;
@@ -526,43 +469,38 @@ section {
   color: #999;
   font-size: 1rem;
 }
-
 .community-description {
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
 }
 
-
-/* ========== 이벤트/프로모션 ========== */
+/* =========================== */
+/* 이벤트 & 프로모션 섹션 */
+/* =========================== */
 .promo-section {
   background-color: #fff;
   padding: 80px 0;
 }
-
 .promo-content {
   display: flex;
   gap: 60px;
   align-items: flex-start;
 }
-
 .promo-list {
   flex: 1;
 }
-
 .promo-list h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
-
 .timeline {
   position: relative;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .timeline::before {
   content: "";
   position: absolute;
@@ -572,7 +510,6 @@ section {
   width: 2px;
   background-color: #d5d4f0;
 }
-
 .timeline li {
   display: flex;
   align-items: center;
@@ -580,7 +517,6 @@ section {
   position: relative;
   padding-left: 48px;
 }
-
 .timeline .icon {
   width: 40px;
   height: 40px;
@@ -589,47 +525,41 @@ section {
   margin-right: 20px;
   flex-shrink: 0;
 }
-
 .text-block .title {
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 6px;
 }
-
 .text-block .desc {
   color: #333;
   line-height: 1.6;
 }
 
-
-/* ========== 회사소개 ========== */
+/* =========================== */
+/* 회사소개 섹션 */
+/* =========================== */
 .about-section {
   background-color: #ffffff;
   padding: 80px 0;
 }
-
 .about-content {
   display: flex;
   justify-content: space-between;
   gap: 60px;
 }
-
 .text-block {
   flex: 1;
 }
-
 .text-block h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
-
 .info-block {
   display: flex;
   align-items: flex-start;
   gap: 20px;
 }
-
 .bar {
   width: 8px;
   height: 100%;
@@ -637,14 +567,13 @@ section {
   border-radius: 4px;
   flex-shrink: 0;
 }
-
 .info-block h3 {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
-
 .info-block p {
   line-height: 1.6;
   color: #333;
 }
+
