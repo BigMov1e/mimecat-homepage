@@ -75,6 +75,7 @@ body {
 .nav-container {
   display: flex;
   padding-left: 0;
+  margin: 0 auto;
 }
 
 .nav-container li {
