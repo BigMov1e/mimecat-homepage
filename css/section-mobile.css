@@ -108,13 +108,16 @@
 
   .nav-container {
     flex-direction: column;
+    position: relative;
     gap: 20px;
     padding: 16px 0;
   }
    
   .submenu {
-    position: static; /* 위치를 절대값이 아닌 흐름에 맡김 */
-    width: 100%;       /* 부모(nav-container)의 너비를 따라감 */
+    position: absolute;
+    left: 0;
+    width: 100%;
     box-sizing: border-box;
   }
+
 }
