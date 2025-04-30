@@ -112,12 +112,21 @@
     gap: 20px;
     padding: 16px 0;
   }
+
+  .menu-item {
+    position: relative;
+    width: 100%;
+  }
    
   .submenu {
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 100vw; /* 뷰포트 너비로 강제 확장 */
+    max-width: 100%;
+    background-color: #222; /* 배경색 있으면 더 잘 보임 */
+    z-index: 999;
     box-sizing: border-box;
+    padding: 12px;
   }
 
 }
