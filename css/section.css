@@ -422,7 +422,7 @@ section {
   padding: 60px 20px;
   background-color: #ffffff;
 }
-support-content {
+.support-content {
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
